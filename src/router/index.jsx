@@ -13,16 +13,12 @@ const Router = () => {
     },
 
     {
-      path: "/",
+      path: "/home",
       element: <Layout />,
       children: [
         {
-          path: "/",
+          path: "/home",
           element: <Navigate to="/home" />,
-        },
-        {
-          path: "home",
-          element: <HomeIndex />,
         },
         {
           path: "users",
