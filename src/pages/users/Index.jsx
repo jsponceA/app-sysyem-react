@@ -23,7 +23,7 @@ const Index = () => {
   const removeUser = async (id) => {
     try {
       MySwal.fire({
-        title: "¿Esta seguro de elimnar este usuario?",
+        title: "¿Esta seguro de eliminar este usuario?",
         text: "Realizada esta acción no se podra revertir!",
         icon: "warning",
         showCancelButton: true,
