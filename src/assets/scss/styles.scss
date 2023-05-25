@@ -1,0 +1,40 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+.bg-img-login {
+    background-image: url('../img/fondo-login.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+body {
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.box-shadow-card {
+    -webkit-box-shadow: 0px 0px 12px 2px rgba(150, 153, 156, 1);
+    -moz-box-shadow: 0px 0px 12px 2px rgba(150, 153, 156, 1);
+    box-shadow: 0px 0px 12px 2px rgba(150, 153, 156, 1);
+}
+
+.main-dashboard {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    grid-template-rows: 45px 1fr 1fr;
+}
+
+.my-sidebard {
+    grid-row: 1 / span 3;
+}
+
+.main-content-body {
+    grid-column: 2;
+    height: 100%;
+}
+
+.main-content-footer {}
