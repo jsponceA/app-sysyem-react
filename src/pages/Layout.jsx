@@ -18,7 +18,7 @@ const Layout = () => {
 
   return (
     <main className="main-dashboard">
-      <div className="d-flex flex-column p-3 text-bg-dark vh-100 my-sidebard">
+      <div className="d-flex flex-column p-3 text-bg-dark min-vh-100  my-sidebard">
         <a
           href="#"
           className="d-flex align-items-center justify-content-center  mb-3 mb-md-0 text-white text-decoration-none"

@@ -3,6 +3,8 @@ import Login from "../pages/auth/Login";
 import Layout from "../pages/Layout";
 import HomeIndex from "../pages/home/Index";
 import UsersIndex from "../pages/users/Index";
+import UsersCreate from "../pages/users/Create";
+import UsersEdit from "../pages/users/Edit";
 import ProductsIndex from "../pages/products/Index";
 
 const Router = () => {
@@ -31,6 +33,14 @@ const Router = () => {
         {
           path: "users",
           element: <UsersIndex />,
+        },
+        {
+          path: "users/create",
+          element: <UsersCreate />,
+        },
+        {
+          path: "users/:id/edit",
+          element: <UsersEdit />,
         },
         {
           path: "products",
