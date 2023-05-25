@@ -21,7 +21,7 @@ const Login = () => {
         timer: 1500,
       });
 
-      navigate("/home");
+      navigate("/dashboard/home", { replace: true });
     } else {
       MySwal.fire({
         title: "Error!",

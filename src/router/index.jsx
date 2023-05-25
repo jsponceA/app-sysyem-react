@@ -9,7 +9,7 @@ const Router = () => {
   let listRoutes = useRoutes([
     {
       path: "/",
-      element: <Login />,
+      element: <Navigate to="/login" replace />,
     },
     {
       path: "/login",
@@ -17,19 +17,23 @@ const Router = () => {
     },
 
     {
-      path: "/home",
+      path: "/dashboard",
       element: <Layout />,
       children: [
         {
-          path: "/home",
+          path: "",
+          element: <Navigate to="home" replace />,
+        },
+        {
+          path: "home",
           element: <HomeIndex />,
         },
         {
-          path: "/users",
+          path: "users",
           element: <UsersIndex />,
         },
         {
-          path: "/products",
+          path: "products",
           element: <ProductsIndex />,
         },
       ],
