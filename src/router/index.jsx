@@ -8,6 +8,10 @@ import ProductsIndex from "../pages/products/Index";
 const Router = () => {
   let listRoutes = useRoutes([
     {
+      path: "/",
+      element: <Login />,
+    },
+    {
       path: "/login",
       element: <Login />,
     },
@@ -18,14 +22,14 @@ const Router = () => {
       children: [
         {
           path: "/home",
-          element: <Navigate to="/home" />,
+          element: <HomeIndex />,
         },
         {
-          path: "users",
+          path: "/users",
           element: <UsersIndex />,
         },
         {
-          path: "products",
+          path: "/products",
           element: <ProductsIndex />,
         },
       ],
