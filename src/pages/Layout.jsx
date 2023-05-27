@@ -23,7 +23,7 @@ const Layout = () => {
           href="#"
           className="d-flex align-items-center justify-content-center  mb-3 mb-md-0 text-white text-decoration-none"
         >
-          <span className="fs-4">APP-SISTEMA</span>
+          <span className="fs-4">{import.meta.env.VITE_APP_NAME}</span>
         </a>
         <hr />
         <ul className="nav nav-pills flex-column mb-auto">
@@ -152,8 +152,9 @@ const Layout = () => {
         <Outlet />
       </div>
       <div className="main-content-footer align-self-end text-center border-1 border-top py-2">
-        <span className="fw-bold">APP-SISTEMA</span> Todos los derechos
-        reservados © <span className="fw-bold">{new Date().getFullYear()}</span>
+        <span className="fw-bold">{import.meta.env.VITE_APP_NAME}</span> Todos
+        los derechos reservados ©{" "}
+        <span className="fw-bold">{new Date().getFullYear()}</span>
       </div>
     </main>
   );

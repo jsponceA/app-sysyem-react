@@ -1,11 +1,7 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 
-.bg-img-login {
-    background-image: url('../img/fondo-login.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
+.bg-img-login {}
 
 body {
     font-family: 'Fjalla One', sans-serif;
